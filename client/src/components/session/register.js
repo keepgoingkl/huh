@@ -76,7 +76,7 @@ class Register extends React.Component {
                         </div>
                         <div className="signup-password">
                             <h4>Password</h4>
-                            <input type="text"
+                            <input type="password"
                                 value={password}
                                 onChange={this.update("password")}
                             />

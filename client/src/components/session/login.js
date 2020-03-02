@@ -53,7 +53,7 @@ class Login extends React.Component {
                             placeholder="Email"
                             onChange={this.update("email")}
                         />
-                        <input type="text"
+                        <input type="password"
                             className="login-pw"
                             value={password}
                             placeholder="Password"
