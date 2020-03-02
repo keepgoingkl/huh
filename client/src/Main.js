@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 class Main extends React.Component {
     constructor(props) {
         super(props);
@@ -8,7 +9,7 @@ class Main extends React.Component {
     render() {
         return (
             <div className="main">
-                This is the main.
+               
             </div>
         )
     }

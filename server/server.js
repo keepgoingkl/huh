@@ -6,6 +6,7 @@ const expressGraphQL = require("express-graphql");
 const models = require("./models");
 const schema = require("./schema/schema");
 const cors = require("cors");
+const path = require("path");
 
 const app = express();
 
@@ -20,6 +21,8 @@ mongoose
 
 app.use(bodyParser.json());
 app.use(cors());
+app.use("/static", express.static(path.join(__dirname, "assets")));
+
 
 app.use(
     "/graphql",

@@ -78,7 +78,7 @@ const login = async data => {
         return { token, loggedIn: true, ...existingUser._doc, password: null };
 
     } catch (err) {
-        return { loggedIn: false };
+        throw err;
     }
 };
 

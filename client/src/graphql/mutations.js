@@ -11,7 +11,7 @@ export default {
     `,
     LOGIN_USER: gql`
         mutation LoginUser($email: String!, $password: String!) {
-            login(username: $email, password: $password) {
+            login(email: $email, password: $password) {
             token
             loggedIn
             }
